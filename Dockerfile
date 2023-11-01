@@ -1,6 +1,5 @@
 FROM ubuntu:latest
-COPY ./schedule /app
-WORKDIR /app
+WORKDIR /
 
 RUN apt-get update && apt-get install -y \
     software-properties-common \
@@ -23,5 +22,3 @@ RUN apt-get update && apt-get install -y \
     
 RUN  locale-gen ja_JP.UTF-8
 ENV  LANG ja_JP.UTF-8
-
-RUN  bash ./gradlew
