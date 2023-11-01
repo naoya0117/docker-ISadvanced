@@ -1,5 +1,4 @@
-From ubuntu
-
+FROM ubuntu:latest
 COPY ./schedule /app
 WORKDIR /app
 
