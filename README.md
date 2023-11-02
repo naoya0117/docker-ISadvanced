@@ -8,7 +8,7 @@ git submodule update --init --recursive
 ```
 - 80番ポートを4000番にポートフォワードしている
 
-- ビルド後に、schedule内の所有権を変える必要あり
+- ビルド時に、schedule内の所有権を変える必要あり
 ```
 sudo chown $(whoami):$(whoami) ./schedule
 ```
