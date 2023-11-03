@@ -1,5 +1,5 @@
 # docker-ISadvanced
-特権ポートをローカルで使いたくなかったのと環境の差を埋めるため作成
+- 応用演習のチーム課題にdocker環境を追加
 ## メモ
 ```
 git clone git@github.com:naoya0117/docker-ISadvanced
