@@ -7,7 +7,7 @@ services:
     stdin_open : true
     command: bash ./gradlew bootrun
     ports: 
-      - "4000:80"
+      - "80:80"
     volumes:
       - ./schedule:/app
     working_dir: /app
