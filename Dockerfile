@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 WORKDIR /
 
+COPY ./schedule /app
+
 RUN apt-get update && apt-get install -y \
     software-properties-common \
     gnupg2 \
@@ -22,3 +24,5 @@ RUN apt-get update && apt-get install -y \
     
 RUN  locale-gen ja_JP.UTF-8
 ENV  LANG ja_JP.UTF-8
+
+RUN ./gradlew
